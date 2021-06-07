@@ -1,5 +1,5 @@
 <?php
-  include __DIR__ . '/includes/person.inc.php';
+  include './includes/autoloader.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
 </head>
 <body>
   <?php
-    $person1 = new Person('Mauro', 'brown', 43);
+    $person1 = new classes\Person\Person('Mauro', 'brown', 43);
     echo $person1->getName();
   ?>
 </body>

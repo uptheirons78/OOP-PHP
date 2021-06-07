@@ -1,11 +1,15 @@
 <?php
 
+namespace classes\Person;
+
 class Person {
 
   // Properties
   private $name;
   private $eyeColor;
   private $age;
+
+  public static $drinkingAge = 21;
 
   // Constructor
   public function __construct($name, $eyeColor, $age) {
@@ -21,5 +25,9 @@ class Person {
 
   public function getName() {
     return $this->name;
+  }
+
+  public static function setDrinkingAge($newDA) {
+    self::$drinkingAge = $newDA;
   }
 }
