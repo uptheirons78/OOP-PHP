@@ -11,9 +11,8 @@
 </head>
 <body>
   <?php
-    $person1 = new Person();
-    $person1->setName('Mauro');
-    echo "<p>{$person1->name}</p>";
+    $person1 = new Person('Mauro', 'brown', 43);
+    echo $person1->getName();
   ?>
 </body>
 </html>
