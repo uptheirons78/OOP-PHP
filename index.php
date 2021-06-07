@@ -1,3 +1,6 @@
+<?php
+  include __DIR__ . '/includes/person.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,10 @@
   <title>OOP PHP</title>
 </head>
 <body>
-
+  <?php
+    $person1 = new Person();
+    $person1->setName('Mauro');
+    echo "<p>{$person1->name}</p>";
+  ?>
 </body>
 </html>
